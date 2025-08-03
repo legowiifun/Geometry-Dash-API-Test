@@ -1,0 +1,16 @@
+{
+	"geode": "4.7.0",
+	"gd": {
+		"win": "2.2074"
+	},
+	"id": "legowiifun.API_test",
+	"name": "Test for API mods",
+	"version": "v2.0.0",
+	"developer": "legowiifun",
+	"description": "A test for various API mods developed by me",
+	"resources": {
+		"sprites": [
+			"resources/*.png"
+		]
+	}
+}
