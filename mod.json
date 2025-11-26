@@ -1,7 +1,10 @@
 {
 	"geode": "4.10.0",
 	"gd": {
-		"win": "2.2074"
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
 	},
 	"id": "legowiifun.API_test",
 	"name": "Test for API mods",
@@ -12,5 +15,19 @@
 		"sprites": [
 			"resources/*.png"
 		]
+	},
+	"links": {
+		"source": "https://github.com/legowiifun/Geometry-Dash-API-Test"
+	},
+	"tags": ["offline","interface","utility", "developer", "api"],
+	"dependencies": {
+		"legowiifun.cheat_api": {
+			"version": ">=1.2.2",
+			"importance": "recommended"
+		},
+		"legowiifun.stat_display": {
+			"version": ">=2.1.0",
+			"importance": "recommended"
+		}
 	}
 }
