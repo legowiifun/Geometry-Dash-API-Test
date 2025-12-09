@@ -1,3 +1,6 @@
+# 3.0.0
+- Add support for Hide UI's APIs
+
 # 2.0.1
 - refactoring
 - Add options to selectively turn off API's
