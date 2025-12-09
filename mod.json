@@ -8,7 +8,7 @@
 	},
 	"id": "legowiifun.API_test",
 	"name": "Test for API mods",
-	"version": "v2.0.0",
+	"version": "v2.0.1",
 	"developer": "legowiifun",
 	"description": "A test for various API mods developed by me",
 	"resources": {
@@ -19,11 +19,24 @@
 	"links": {
 		"source": "https://github.com/legowiifun/Geometry-Dash-API-Test"
 	},
+	"settings": {
+		"enable-cheat-api": {
+			"type": "string",
+			"default": "dispatch events",
+			"one-of": ["off", "dispatch events", "direct linking"],
+			"name": "Setting for cheat API"
+		},
+		"enable-stat-display": {
+			"type": "bool",
+			"default": true,
+			"name": "Setting for the Stat Display API showcase"
+		}
+	},
 	"tags": ["offline","interface","utility", "developer", "api"],
 	"dependencies": {
 		"legowiifun.cheat_api": {
 			"version": ">=1.2.2",
-			"importance": "recommended"
+			"importance": "required"
 		},
 		"legowiifun.stat_display": {
 			"version": ">=2.1.0",
