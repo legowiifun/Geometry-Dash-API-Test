@@ -7,16 +7,17 @@ bool CheatAPIDirectMenuLayer::init() {
 	if (!MenuLayer::init()) {
 		return false;
 	}
-	std::string str1 = "ROBTOP";
-	cheatAPI::setCheat(rulesets::ROBTOP);
-	bool b1;
-	b1=cheatAPI::isCheating();
-	if (b1) {
-		log::debug("Ruleset active");
+	if ((Mod::get()->getSettingValue<std::string>("enable-cheat-api"))=="direct linking") {
+		cheatAPI::setCheat(rulesets::ROBTOP);
+		bool b1;
+		b1=cheatAPI::isCheating();
+		if (b1) {
+			log::debug("Ruleset active");
+		}
+		else {
+			log::debug("Ruleset not active");
+		}
+		cheatAPI::endCheat(rulesets::ROBTOP);
 	}
-	else {
-		log::debug("Ruleset not active");
-	}
-	cheatAPI::endCheat(rulesets::ROBTOP);
 	return true;
 }

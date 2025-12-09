@@ -4,6 +4,8 @@ bool StatDisplayMenuLayer::init() {
 	if (!MenuLayer::init()) {
 		return false;
 	}
-	i++;
+	if (Mod::get()->getSettingValue<bool>("enable-stat-display")) {
+		i++;
+	}
 	return true;
 }
