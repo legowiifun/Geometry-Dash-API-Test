@@ -3,20 +3,20 @@
 //It then prints to the console if you have the correct ruleset enabled
 
 #include "CheatAPIDirectMenuLayer.hpp"
-	bool CheatAPIDirectMenuLayer::init() {
-		if (!MenuLayer::init()) {
-			return false;
-		}
-		std::string str1 = "ROBTOP";
-		cheatAPI::setCheat(rulesets::ROBTOP);
-		bool b1;
-		b1=cheatAPI::isCheating();
-		if (b1) {
-			log::debug("Ruleset active");
-		}
-		else {
-			log::debug("Ruleset not active");
-		}
-		cheatAPI::endCheat(rulesets::ROBTOP);
-		return true;
+bool CheatAPIDirectMenuLayer::init() {
+	if (!MenuLayer::init()) {
+		return false;
 	}
+	std::string str1 = "ROBTOP";
+	cheatAPI::setCheat(rulesets::ROBTOP);
+	bool b1;
+	b1=cheatAPI::isCheating();
+	if (b1) {
+		log::debug("Ruleset active");
+	}
+	else {
+		log::debug("Ruleset not active");
+	}
+	cheatAPI::endCheat(rulesets::ROBTOP);
+	return true;
+}
