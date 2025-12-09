@@ -17,8 +17,11 @@ add_library(${PROJECT_NAME} SHARED
     "src/StatDisplay/StatDisplayAPIBaseGameLayer.cpp"
     "src/StatDisplay/main.cpp"
     # Cheat API
- "src/CheatAPI/CheatAPIMenuLayer.cpp"
- "src/CheatAPI/CheatAPIDirectMenuLayer.cpp")
+    "src/CheatAPI/CheatAPIMenuLayer.cpp"
+    "src/CheatAPI/CheatAPIDirectMenuLayer.cpp"
+    # Hide UI
+    "src/hideUI/HideUIToggleTestLayer.cpp"
+    )
 
 if (NOT DEFINED ENV{GEODE_SDK})
     message(FATAL_ERROR "Unable to find Geode SDK! Please define GEODE_SDK environment variable to point to Geode")
