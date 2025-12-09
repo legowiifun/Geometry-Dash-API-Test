@@ -12,9 +12,13 @@ project(TestforCheatAPImod VERSION 2.0.0)
 
 # Set up the mod binary
 add_library(${PROJECT_NAME} SHARED
-    "src/StatDisplay.cpp"
-    # Add any extra C++ source files here
- "src/CheatAPI.cpp")
+    # Stat Display
+    "src/StatDisplay/StatDisplayMenuLayer.cpp"
+    "src/StatDisplay/StatDisplayAPIBaseGameLayer.cpp"
+    "src/StatDisplay/main.cpp"
+    # Cheat API
+ "src/CheatAPI/CheatAPIMenuLayer.cpp"
+ "src/CheatAPI/CheatAPIDirectMenuLayer.cpp")
 
 if (NOT DEFINED ENV{GEODE_SDK})
     message(FATAL_ERROR "Unable to find Geode SDK! Please define GEODE_SDK environment variable to point to Geode")
