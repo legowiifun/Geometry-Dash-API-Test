@@ -47,6 +47,11 @@
 			"type":"bool",
 			"default":true,
 			"name": "Setting for the direct linking Hide UI showcase"
+		},
+		"enable-hide-ui-dispatch-test": {
+			"type":"bool",
+			"default":true,
+			"name": "Setting for the showcase of the Hide UI dispatch events"
 		}
 	},
 	"tags": ["offline","interface","utility", "developer", "api"],
