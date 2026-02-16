@@ -9,7 +9,7 @@ bool HideUIDispatchLayer::init(GJGameLevel* level, bool useReplay, bool dontCrea
         label->setID("HideUIDispatchTest"_spr);
         this->addChild(label);
         this->updateLayout();
-        DispatchEvent<std::string, std::string>("legowiifun.hide_ui/addUI", label->getID(), "PlayLayer").post();
+        hide_ui_events::addUIElementEvent(label->getID(), "PlayLayer");
     }
     return true;
 }

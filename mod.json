@@ -1,10 +1,10 @@
 {
-	"geode": "4.10.0",
+	"geode": "5.0.0-beta.2",
 	"gd": {
-		"win": "2.2074",
-		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
 	},
 	"id": "legowiifun.API_test",
 	"name": "Test for API mods",
@@ -57,16 +57,16 @@
 	"tags": ["offline","interface","utility", "developer", "api"],
 	"dependencies": {
 		"legowiifun.cheat_api": {
-			"version": ">=1.2.2",
-			"importance": "required"
+			"version": ">=1.2.3",
+			"required": true
 		},
 		"legowiifun.stat_display": {
-			"version": ">=2.1.0",
-			"importance": "recommended"
+			"version": ">=2.1.1",
+			"required": false
 		},
 		"legowiifun.hide_ui": {
-			"version": ">=1.2.0",
-			"importance": "required"
+			"version": ">=1.3.0",
+			"required": true
 		}
 	}
 }
