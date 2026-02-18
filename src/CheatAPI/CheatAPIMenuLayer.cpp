@@ -7,10 +7,10 @@ bool CheatAPIMenuLayer::init() {
 	if (!MenuLayer::init()) {
 		return false;
 	}
-	if ((Mod::get()->getSettingValue<std::string>("enable-cheat-api"))=="dispatch events") {
+	if ((Mod::get()->getSettingValue<std::string>("enable-cheat-api"))=="event export API") {
 		std::string str1 = "ROBTOP";
 		cheatAPIEvents::setCheatingOne(str1);
-		bool b1=cheatAPIEvents::isCheatingGeneral().unwrap();
+		bool b1=cheatAPIEvents::isCheatingGeneral();
 		if (b1) {
 			log::debug("Ruleset active");
 		}
