@@ -6,9 +6,9 @@
  * Include the Geode headers.
  */
 #include <Geode/Geode.hpp>
-#include <Geode/loader/Dispatch.hpp>
 #include <Geode/modify/GJBaseGameLayer.hpp>
 #include "main.hpp"
+#include <legowiifun.stat_display/src/api.hpp>
 
 /**
  * Brings cocos2d and all Geode namespaces to the current scope.

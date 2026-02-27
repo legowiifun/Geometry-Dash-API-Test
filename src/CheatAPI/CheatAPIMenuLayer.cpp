@@ -7,18 +7,17 @@ bool CheatAPIMenuLayer::init() {
 	if (!MenuLayer::init()) {
 		return false;
 	}
-	if ((Mod::get()->getSettingValue<std::string>("enable-cheat-api"))=="dispatch events") {
+	if ((Mod::get()->getSettingValue<std::string>("enable-cheat-api"))=="event export API") {
 		std::string str1 = "ROBTOP";
-		DispatchEvent<std::string>("legowiifun.cheat_api/startCheatOne", str1).post();
-		bool b1;
-		DispatchEvent<bool*>("legowiifun.cheat_api/isCheating", &b1).post();
+		cheatAPIEvents::setCheatingOne(str1);
+		bool b1=cheatAPIEvents::isCheatingGeneral();
 		if (b1) {
 			log::debug("Ruleset active");
 		}
 		else {
 			log::debug("Ruleset not active");
 		}
-		DispatchEvent<std::string>("legowiifun.cheat_api/endCheatOne", str1).post();
+		cheatAPIEvents::endCheatingOne(str1);
 	}
 	return true;
 }

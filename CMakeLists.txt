@@ -21,7 +21,7 @@ add_library(${PROJECT_NAME} SHARED
     "src/CheatAPI/CheatAPIDirectMenuLayer.cpp"
     # Hide UI
     "src/hideUI/HideUIToggleTestLayer.cpp"
-    "src/hideUI/HideUIDispatchLayer.cpp"
+    "src/hideUI/HideUIEventsLayer.cpp"
     )
 
 if (NOT DEFINED ENV{GEODE_SDK})
