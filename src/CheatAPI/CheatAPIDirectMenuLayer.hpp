@@ -5,7 +5,7 @@
  * Include the Geode headers.
  */
 #include <Geode/Geode.hpp>
-#include <legowiifun.cheat_API/include/cheatAPI.hpp>
+#include <legowiifun.cheat_api/cheatAPI.hpp>
 /**
  * Brings cocos2d and all Geode namespaces to the current scope.
  */

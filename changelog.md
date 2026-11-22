@@ -1,3 +1,6 @@
+# 3.0.1
+- 2.2091 support
+
 # 3.0.0
 - Add support for Hide UI's APIs
 - 2.2081 support
