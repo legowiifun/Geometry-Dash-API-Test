@@ -8,7 +8,7 @@
 #include <Geode/Geode.hpp>
 #include <Geode/modify/GJBaseGameLayer.hpp>
 #include "main.hpp"
-#include <legowiifun.stat_display/src/api.hpp>
+#include <legowiifun.stat_display/api.hpp>
 
 /**
  * Brings cocos2d and all Geode namespaces to the current scope.
