@@ -9,9 +9,7 @@ bool HideUIDispatchLayer::init(GJGameLevel* level, bool dontCreateObjects) {
         label->setID("HideUIDispatchTest"_spr);
         this->addChild(label);
         this->updateLayout();
-        geode::log::debug("Calling add UI element event");
         hide_ui_events::addUIElementEvent(label->getID(), "PlayLayer");
-        geode::log::debug("Finishing method call!");
     }
     return true;
 }
